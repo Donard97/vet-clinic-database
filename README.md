@@ -15,17 +15,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### Donard Golaj
 
-👤 **Author2**
+- Github : [@Donard97](https://github.com/Donard97)
+- Twitter: [@donardgolaj](https://twitter.com/donardgolaj)
+- LinkdIn : [@donard-golaj](https://www.linkedin.com/in/donard-golaj/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
