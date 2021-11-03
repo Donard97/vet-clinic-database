@@ -13,3 +13,14 @@ CREATE TABLE animals(
 
 ALTER TABLE animals 
   Add species TEXT;
+
+CREATE TABLE owners(
+  id INT PRIMARY KEY,
+  full_name TEXT,
+  age INT 
+)
+
+CREATE TABLE species(
+  id INT PRIMARY KEY,
+  name TEXT
+)
