@@ -15,7 +15,7 @@ ALTER TABLE animals
   Add species TEXT;
 
 CREATE TABLE owners(
-  id INT PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   full_name TEXT,
   age INT 
 )
