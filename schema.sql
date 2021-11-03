@@ -21,6 +21,20 @@ CREATE TABLE owners(
 )
 
 CREATE TABLE species(
-  id INT PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   name TEXT
 )
+
+ALTER TABLE animals DROP COLUMN id;
+ALTER TABLE animals ADD COLUMN id SERIAL PRIMARY KEY;
+ALTER TABLE animals DROP COLUMN species;
+
+ALTER TABLE animals ADD COLUMN species_id INT,
+  ADD CONSTRAINT fk_species
+  FOREIGN KEY (species_id)
+  REFERENCES species (id);
+
+ALTER TABLE animals ADD COLUMN owner_id INT,
+  ADD CONSTRAINT fk_owners
+  FOREIGN KEY (owner_id)
+  REFERENCES owners (id);
