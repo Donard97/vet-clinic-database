@@ -23,3 +23,5 @@ UPDATE animals SET owner_id=2 WHERE name  IN ('Pikachu','Gabumon');
 UPDATE animals SET owner_id=3 WHERE name IN ('Devimon','Plantmon');
 UPDATE animals SET owner_id=4 WHERE name IN ('Charmander','Squirtle','Blossom');
 UPDATE animals SET owner_id=5 WHERE name IN ('Angemon','Boarmon');
+
+UPDATE owners SET full_name='Melody Pond' WHERE id=4;
