@@ -32,6 +32,8 @@ INSERT INTO vets (id,name,age,date_of_graduation) VALUES (2, 'Maisy Smith', 26, 
 INSERT INTO vets (id,name,age,date_of_graduation) VALUES (3, 'Stephanie Mendez', 64, '1981-06-08');
 INSERT INTO vets (id,name,age,date_of_graduation) VALUES (4, 'Jack Harkness', 38, '2008-06-08');
 
+INSERT INTO specializations (vets_id,species_id) VALUES (1,1),(3,2),(3,1),(4,2);
+
 INSERT INTO visits (animals_id,vets_id,date) VALUES (1, 1, '2020-05-24'),(1, 3, '2020-07-22'),(2, 4, '2021-02-02'),(3, 2, '2020-01-05');
 INSERT INTO visits (animals_id,vets_id,date) VALUES (3, 2, '2020-03-08'),(3, 2, '2020-05-14'),(4, 2, '2021-05-04'),(5, 4, '2021-02-24');
 INSERT INTO visits (animals_id,vets_id,date) VALUES (6, 2, '2019-12-21'),(6, 1, '2020-08-10'),(6, 2, '2021-04-07'),(7, 3, '2019-09-29');
