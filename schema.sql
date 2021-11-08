@@ -47,6 +47,7 @@ CREATE TABLE vets(
 );
 
 CREATE TABLE specializations (
+  id SERIAL PRIMARY KEY,
   species_id INT,
   vets_id INT,
   CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id) ON DELETE CASCADE,
@@ -54,6 +55,7 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
+  id SERIAL PRIMARY KEY,
   animals_id INT,
   vets_id INT,
   date DATE,
