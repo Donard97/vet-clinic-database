@@ -47,6 +47,7 @@ CREATE TABLE vets(
 );
 
 CREATE TABLE specializations (
+  id SERIAL PRIMARY KEY,
   species_id INT,
   vets_id INT,
   CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id) ON DELETE CASCADE,
@@ -54,9 +55,16 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
+  id SERIAL PRIMARY KEY,
   animals_id INT,
   vets_id INT,
   date DATE,
   CONSTRAINT fk_animals FOREIGN KEY(animals_id) REFERENCES animals(id),
   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id)
 );
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animals_id_index ON visits(animals_id);
+CREATE INDEX vets_id_index ON visits(vets_id, animals_id, date);
+CREATE INDEX email_index ON owners(email ASC);
