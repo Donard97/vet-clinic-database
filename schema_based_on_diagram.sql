@@ -29,3 +29,26 @@ CREATE TABLE invoice_items (
   FOREIGN KEY (treatment_id) 
   REFERENCES treatments(id)
 )
+
+CREATE TABLE medical_history (
+  id SERIAL PRIMARY KEY,
+  admitted_at TIMESTAMP,
+  patient_id INT,
+  status VARCHAR(255),
+  CONSTRAINT fk_patient
+  FOREIGN KEY(patient_id)
+  REFERENCES patients(id)
+)
+
+CREATE TABLE treatments (
+  id SERIAL PRIMARY KEY,
+  type VARCHAR(255),
+  name VARCHAR(255),
+)
+
+CREATE TABLE treatments_history (
+  treatment_id INT,
+  medical_history_id INT,
+  CONSTRAINT fk_tr FOREIGN KEY(treatment_id) REFERENCES treatments(id) ON DELETE CASCADE,
+  CONSTRAINT fk_mh FOREIGN KEY(medical_history_id) REFERENCES medical_history(id) ON DELETE CASCADE
+);
