@@ -1,5 +1,7 @@
 # VET CLINIC DATABASE
 
+![drawSQL-export-2021-11-09_15_53](https://user-images.githubusercontent.com/74506933/140958866-80ea39ea-d98b-404f-80f1-8f264e592523.png)
+
 > Vet clinic database is a project about using a relational database to create the data structure for a vet clinic. Starting with one table, and step by step will create a complete database with data about animals, animals' owners, vets, vet's specialties, and visits.
 
 
